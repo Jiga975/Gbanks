@@ -19,7 +19,6 @@ public class UserMapper {
         user.setPassword(userRequest.getPassword());
         user.setAge(userRequest.getAge());
         user.setEmail(userRequest.getEmail());
-        user.setRole(ROLE.valueOf(userRequest.getRole()));
         return user;
     }
 
@@ -31,7 +30,6 @@ public class UserMapper {
         response.setGender(user.getGender());
         response.setAge(user.getAge());
         response.setEmail(user.getEmail());
-        response.setRole(user.getRole().toString());
         return response;
     }
 }

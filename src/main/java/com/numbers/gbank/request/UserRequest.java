@@ -18,5 +18,4 @@ public class UserRequest {
     private String password;
     private int age;
     private String email;
-    private String role; // ROLE as String for simplicity in requests
 }
